@@ -28,6 +28,7 @@ body {
     font-size: 14px;
 }
 .body_container {
+    display: none;
     padding: 0 60px;
     max-width: 1150px;
     margin: 0 auto;
@@ -402,7 +403,8 @@ div {
 #footer {
     padding: .8em 0 3.6em;
     margin-top: 1em;
-    line-height: 2.5;
+//  line-height: 2.5;
+    line-height:24px;
     color: #6E7173;
     text-align: center;
     span {

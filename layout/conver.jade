@@ -1,0 +1,20 @@
+
+span.mobile.btn-mobile-menu
+     i.icon.icon-list.btn-mobile-menu__icon
+     i.icon.icon-x-circle.btn-mobile-close__icon.hidden
+ div.panel-cover
+     .panel-main
+         .panel-main__inner.panel-inverted
+             .panel-main__content
+                 h1.panel-cover__title.panel-title
+                     a(href='#')= config.title
+                 hr.panel-cover__divider
+                 p.panel-cover__description= config.subtitle
+                 hr.panel-cover__divider.panel-cover__divider--secondary
+                 .navigation-wrapper
+                     nav.cover-navigation.cover-navigation--primary(style='display:inline-block')
+                         ul.navigation
+                             - for (var i in theme.menu)
+                                li.navigation__item
+                                    a.blog-button(href=theme.menu[i].directory) #{ __(theme.menu[i].page) }
+         .panel-cover--overlay
