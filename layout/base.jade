@@ -38,7 +38,9 @@ html(lang='#{config.language}')
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
 
   body
+    include loading
     include conver
+
     .body_container
       #header
         .site-name

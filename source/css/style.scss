@@ -54,9 +54,9 @@ a:focus {
 .clear {
     clear: both;
 }
-div {
-    box-sizing: border-box;
-}
+//div {
+//    box-sizing: border-box;
+//}
 
 #header {
     padding: 58px 0 0;
@@ -1833,3 +1833,130 @@ em.search-keyword {
   font-style: normal;
   color: #01579f;
 }
+
+/* loading animate start*/
+.loading {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 10
+}
+
+.loading-circle {
+    background-color: transparent;
+    opacity: .9;
+    border-top: 10px solid #27ae60;
+    border-right: 10px solid #d35400;
+    border-bottom: 10px solid #2980b9;
+    border-left: 10px solid #c0392b;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition:all 0.4s ease-in;
+    animation:spin 1s infinite linear;
+    -webkit-animation:spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.loading-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    -webkit-transition: border-width 0.4s ease-in;
+    -moz-transition: border-width 0.4s ease-in;
+    -ms-transition: border-width 0.4s ease-in;
+    -o-transition: border-width 0.4s ease-in;
+    transition: border-width 0.4s ease-in;
+}
+
+.loading-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.loading-info {
+    position: absolute;
+    top: 110%;
+    width: 120px;
+    text-align: center;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in
+}
+
+.overlay {
+    background: #ecf0f1;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in
+}
+/* loading animate end*/
