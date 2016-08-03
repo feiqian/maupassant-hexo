@@ -46,3 +46,55 @@ nav { display: inline-block; position: relative; }
 .navigation__item { display: inline-block; margin: 3px; line-height: 1em; }
 .navigation__item a { display: block; position: relative; border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); opacity: 0.8; }
 .navigation__item a:hover { color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); opacity: 1; }
+
+/** social css start **/
+.navigation--social a {
+    padding: 6px 6px 6px 6px;
+    border:none;
+}
+.navigation--social a .icon {
+    display: block;
+    font-size: 1.7em;
+}
+
+/*字体来源:https://github.com/nullice/NViconsLib_Silhouette*/
+/*字体编辑:http://efe.baidu.com/blog/use-fonteditor-to-build-webfont*/
+
+@font-face {
+    font-family: 'NViconsLib2';
+    src:url('../fonts/NViconsLib2/NViconsLib2.eot?-1rsxqu');
+    src:url('../fonts/NViconsLib2/NViconsLib2.eot?#iefix-1rsxqu') format('embedded-opentype'),
+    url('../fonts/NViconsLib2/NViconsLib2.ttf?-1rsxqu') format('truetype'),
+    url('../fonts/NViconsLib2/NViconsLib2.woff?-1rsxqu') format('woff'),
+    url('../fonts/NViconsLib2/NViconsLib2.svg?-1rsxqu#NViconsLib2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'NViconsLib2';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-douban:before {
+    content: "\e617";
+}
+.icon-social-weibo:before {
+    content: "\e638";
+}
+.icon-social-zhihu:before {
+    content: "\e65c";
+}
+.icon-social-github:before {
+    content: "\e694";
+}
+/** social css end **/

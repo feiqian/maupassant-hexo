@@ -57,5 +57,12 @@ timeline:
 js: js
 css: css
 
+# Social Links
+social:
+  github: "https://github.com/feiqian"
+  weibo: "http://weibo.com/feiqian1992"
+  zhihu: "http://www.zhihu.com/people/feiqian1992"
+  douban: "http://www.douban.com/people/feiqian1992"
+
 # Theme version
 version: 0.0.0

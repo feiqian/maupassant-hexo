@@ -12,9 +12,15 @@ span.mobile.btn-mobile-menu
                  p.panel-cover__description= config.subtitle
                  hr.panel-cover__divider.panel-cover__divider--secondary
                  .navigation-wrapper
-                     nav.cover-navigation.cover-navigation--primary(style='display:inline-block')
+                     nav.cover-navigation.cover-navigation--primary
                          ul.navigation
                              - for (var i in theme.menu)
                                 li.navigation__item
                                     a.blog-button(href=theme.menu[i].directory) #{ __(theme.menu[i].page) }
+                     nav.cover-navigation.navigation--social
+                         ul.navigation
+                             - for (var i in theme.social)
+                                 li.navigation__item
+                                     a(href=theme.social[i],target='_blank')
+                                         i(class='icon icon-social-#{i}')
          .panel-cover--overlay
