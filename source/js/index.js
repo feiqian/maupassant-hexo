@@ -37,6 +37,19 @@ $(function(){
             blog_conver.show();
         }
     }
+                              
+    var originTitle = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '我藏起来了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)被你发现了';
+            titleTime = setTimeout(function() {
+                document.title = originTitle;
+            },2000);
+        }
+    });
 
     addLoading();
     showConver();
